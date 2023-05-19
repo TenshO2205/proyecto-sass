@@ -532,7 +532,7 @@ footer {
       margin-left: 40px;
       text-align: center; }
     header #chk1:checked ~ ul {
-      top: 9.2%;
+      top: 0%;
       right: -2%; } }
 
 @media (max-width: 600px) {
@@ -551,7 +551,7 @@ footer {
           margin-left: 100px;
           width: 200px; }
   header #chk1:checked ~ ul {
-    top: 9.2%;
+    top: 0%;
     right: -2%; } }
 
 @media (max-width: 580px) {
