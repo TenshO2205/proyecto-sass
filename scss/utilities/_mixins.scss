@@ -1,0 +1,49 @@
+@import "./variables";
+@mixin banner(){
+    display: $display-grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 270px);
+}
+
+@mixin grid($columns, $rows){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, 100px);
+}
+
+@mixin bg-image(){
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+// Mixins para categorias
+
+@mixin contenido(){
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@mixin contenido-a(){
+    text-decoration: none;
+    grid-row: 3;
+    grid-column: 3;
+}
+
+@mixin contenido-h2{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+// Mixins para las cards
+@mixin d-flex($justify, $wrap, $gap, $direction){
+    display: flex;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    gap: $gap;
+    flex-direction: $direction;
+}
+

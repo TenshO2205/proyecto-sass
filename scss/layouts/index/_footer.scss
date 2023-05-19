@@ -1,0 +1,67 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+footer{
+    @include d-flex(space-evenly, wrap, 10px, row);
+    background-color: $color-lila;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    padding: 25px;
+    .pagos{
+        @include d-flex(center, none, none, column);
+        align-items: center;
+        align-self: center;
+        p{
+            margin: 0;
+        }
+    }
+    .envios{
+        @include d-flex(center, none, none, column);
+        p{
+            margin: 0;
+        }
+        img{
+            margin: 0 auto;
+            padding-top: 3px;
+            height: 30px;
+            width: 50px
+        }
+    }
+    .redes{
+        @include d-flex(center, none, none, column);
+        align-items: center;
+        p{
+            margin: 0;
+        }
+        img{
+            height: 30px;
+        }
+    }
+    .contacto{
+        @include d-flex(none, none, 7px, column);
+        align-items: center;
+        font-size: 15px;
+        p{
+            margin: 0;
+        }
+        .btn-contact{
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: $color-blanco;
+            cursor: pointer;
+            &:hover{
+                background-color: $color-gris;
+                color: $color-lila;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+.footer-modify{
+    margin-top: auto;
+}

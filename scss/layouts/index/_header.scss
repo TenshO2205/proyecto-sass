@@ -1,0 +1,136 @@
+@import "../utilities/variables";
+
+header{
+    width: 100%;
+    height: 100px;
+    display: $display-flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+    background-color: $color-lila;
+    .logo{
+        margin: 0 30px;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    }
+    #chk1{
+        display: none;
+    }
+    i{
+        cursor: pointer;
+        color: $color-blanco;
+    }
+    .search-box{
+        flex: 1;
+        position: relative;
+        margin: 0 30px;
+        input{
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            color: $color-negro;
+            font-size: 16px;
+            text-align: center;
+        }
+        button{
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            border: none;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            transform: scale(0.9);
+            background: $color-lila;
+        }
+    }
+        ul{
+            display: $display-flex;
+            flex: 2;
+            justify-content: space-evenly;
+            position: relative;
+            margin-top: 15px;
+            .accordion{
+                display: none;
+            }
+            li{
+                list-style: none;
+                a{
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: $color-negro;
+                    padding: 10px 15px;
+                    &:hover{
+                        color: $color-gris;
+                    }
+                    i{
+                        color: $color-negro;
+                        &:hover{
+                            color: $color-gris;
+                        }
+                    }
+                }
+                &:hover .submenu{
+                    display: block;
+                }
+            }
+            .arrow{
+                position: absolute;
+                width: 11px;
+                height: 11px;
+                top: -5.5px;
+                left: 55px;
+                background-color: $color-gris;
+                transform: rotate(45deg);
+                cursor: pointer;
+                transition: .3s;
+                z-index: -1;
+            }
+            .submenu{
+                list-style: none;
+                position: absolute;
+                display: none;
+                text-align: center;
+                width: 120px;
+                background-image: linear-gradient(to top, #b494bc, #b6a2c2, #bab0c6, #c1bdc9, #cacaca);
+                border-radius: 5px;
+                transform: translateX(-15px);
+                li{
+                    margin-left:-25px;
+                    .link-sub{
+                        display: block;
+                        padding: 5px 10px;
+                        color: $color-negro;
+                        &:hover{
+                            color: $color-blanco;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    .cart{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        a{
+            i{
+                color: $color-negro;
+                &:hover{
+                    color: $color-gris;
+                }
+            }
+        }
+    }
+    .menu{
+        font-size: 2.5em;
+        display: none;
+    }
+}

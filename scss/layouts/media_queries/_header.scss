@@ -1,0 +1,220 @@
+@import "../utilities/variables";
+
+@media(max-width:1067px){
+    header{
+        ul{
+            margin-right: 10px;
+        }
+        .cart{
+            right: 15px;
+        }
+    }
+}
+
+@media(max-width:900px){
+    header{
+        position: fixed;
+        top: 0;
+        right: 0;
+    .search-box{
+        button{
+        position: absolute;
+    }
+    }
+    ul{
+        position: fixed;
+        top: 9%;
+        right: -100%;
+        background: $color-blanco;
+        height: calc(100vh - 100px);
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+        li{
+            a{
+                margin-right: 20px;
+            }
+        }
+        .list-modify{
+            display: none;
+        }
+        .accordion{
+            display: block;
+            margin-right: 20px;
+            .accordion-body{
+                padding: 0 150px;
+                background-color: #dbdada;
+                @include d-flex(center, none, 20px, column);
+                font-size: 15px;
+                a{
+                    text-align: center;
+                    text-decoration: none;
+                    color: $color-negro;
+                    padding: 10px;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+                .container-text{
+                    border-left: 1px solid $color-negro;
+                    &:nth-child(1){
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .cart{
+        top: 35px;
+        font-size: 20px;
+        margin: 0 65px;
+    }
+    
+    .menu{
+        display: block;
+        width: 100px;
+        margin-left: 40px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        top: 9.2%;
+        right: -2%;
+    }
+    }
+}
+
+@media(max-width:600px){
+    header{
+        .logo{
+            font-size: 10px;
+            margin-left: 8px;
+        }
+        ul{
+            width: 90%;
+            li{
+                a{
+                    margin-right: 40px;
+                }
+            }
+            .accordion{
+                margin-right: 30px;
+                .accordion-body{
+                    padding: 0 62px;
+                    .container-text{
+                        margin-left: 100px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        #chk1:checked ~ ul{
+            top: 9.2%;
+            right: -2%;
+        }
+    }
+}
+
+@media (max-width:580px){
+    header{
+        .logo{
+            img{
+                width: 90px;
+                height: 90px;
+                margin: 0 12px;
+            }
+        }
+        .search-box{
+            input{
+                display: none;
+            }
+            button{
+                font-size: 20px;
+                width: 0;
+                top: -20px;
+                i{
+                    filter:invert(86%) sepia(8%) saturate(15%) hue-rotate(13deg) brightness(94%) contrast(91%);
+                }
+            }
+        }
+        .cart{
+            width: 7%;
+        }
+    }
+}
+
+@media(max-width:450px){
+    header{
+        ul{
+            li{
+                a{
+                    margin-right: 60px;
+                }
+            }
+            .accordion{
+                margin-right: 30px;
+                .accordion-body{
+                    padding: 0 30px;
+                }
+            }
+        }
+        .cart{
+            width: 9%;
+        }
+        }
+}
+
+@media(max-width:376px){
+    header{
+        ul{
+            li{
+                a{
+                    margin-right: 40px;
+                }
+            }
+            .accordion{
+                .accordion-body{
+                    padding: 0 15px;
+                }
+            }
+        }
+        .cart{
+            width: 11%;
+        }
+        #chk1:checked ~ ul{
+            top: 9.2%;
+            right: -3%;
+        }
+    }
+}
+
+@media(max-width:361px){
+    header{
+        ul{
+            .accordion{
+                .accordion-body{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:332px){
+    header{
+        ul{
+            width: 97%;
+        }
+        .cart{
+            width: 9%;
+        }
+    }
+}
+
+@media(max-width:321px){
+    header{
+        .cart{
+            width: 5%;
+        }
+    }
+}

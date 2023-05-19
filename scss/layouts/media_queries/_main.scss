@@ -1,0 +1,216 @@
+@media(max-width:1440px){
+    main{
+        .container-banner{
+            .banner{
+                background-image: url(../assets/banner/1440x775.jpg);
+            }
+        }
+    }
+}
+
+@media(max-width:1185px){
+    main{
+        .categorias{
+            margin: 20px 10px;
+            gap: 10px;
+            .cadenas{
+                &:hover{
+                    transform: scale(1.01);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1067px){
+    body{
+        .wts{
+            img{
+                width: 43px;
+            }
+        }
+    }
+    main{
+        .container-banner{
+            .banner{
+                background-image: url(../assets/banner/1024x659.jpg);
+            }
+        }
+        .categorias{
+            .pulseras{
+                &:hover{
+                    transform: scale(1);
+                }
+            }
+            .insumos{
+                &:hover{
+                    transform: scale(1);
+                }
+            }
+            .cadenas{
+                &:hover{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:914px){
+    main{
+        .categorias{
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(9, 150px);
+            gap: 3px;
+            margin-left: 20px;
+            .pulseras{
+                grid-column: 2 / 7;
+                grid-row: 1 / 4;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                a{
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+            }
+            .cadenas{
+                grid-column: 2 / 7;
+                grid-row: 4 / 7;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                a{
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+            }
+            .insumos{
+                grid-column: 2 / 7;
+                grid-row: 7 / 10;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                a{
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:900px){
+    main{
+        .container-banner{
+            margin-top: 100px;
+        }
+    }
+}
+
+@media(max-width:714px){
+    body{
+        .wts{
+            img{
+                width: 45px;
+            }
+        }
+    }
+}
+
+@media(max-width:660px){
+    main{
+        .informacion-general{
+            .info-compra{
+                p{
+                    margin-right: 10px;
+                    font-size: 13px;
+                }
+            }
+        }
+        .informacion-general__2{
+            font-size: 13px;
+        }
+    }
+}
+
+@media(max-width:635px){
+    main{
+    .container-banner{
+        .banner{
+            background-image: url(../assets/banner/635x705.jpg);
+        }
+    }
+}
+}
+
+@media(max-width:450px){
+    main{
+        .container-banner{
+            .banner{
+                background-image: url(../assets/banner/425x659.jpg);
+            }
+        }
+        .titulo{
+            margin-top: 20px;
+            h1{
+                font-size: 35px;
+            }
+        }
+        .categorias{
+            grid-template-columns: 300px;
+            grid-template-rows: 250px 250px 250px;
+            justify-content: center;
+            .pulseras{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .cadenas{
+                grid-row: 2;
+                grid-column: 1;
+            }
+            .insumos{
+                grid-column: 1;
+                grid-row: 3;
+            }
+        }
+        .destacados{
+            h2{
+                font-size: 35px;
+            }
+        }
+        .mayor{
+            h2{
+                font-size: 50px;
+            }
+        }
+        .info-compra{
+            p{
+                width: 90%;
+                font-size: 12px;
+            }
+        }
+        .box-informacion{
+            gap: 20px;
+        }
+    }
+}
+
+@media(max-width:376px){
+    main{
+        .container-banner{
+            .banner{
+                background-image: url(../assets/banner/375x659.jpg);
+            }
+        }
+    }
+}
+
+@media(max-width:321px){
+    main{
+        .container-banner{
+            .banner{
+                background-image: url(../assets/banner/320x659.jpg);
+            }
+        }
+    }
+}
+
+

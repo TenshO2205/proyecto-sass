@@ -1,0 +1,121 @@
+.container-form {
+	margin: 100px auto;
+	width: 85%;
+	height: 500px;
+	background: $color-gris;
+	border-radius: 6px;
+	padding: 20px 60px 30px 40px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	.content-form {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.panel-izquierdo {
+			width: 25%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-top: 15px;
+			position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                height: 120%;
+                width: 2px;
+                right: -15px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: $color-lila;
+            }
+            .telefono {
+                margin: 14px;
+                text-align: center;
+                img {
+                    font-size: 30px;
+                    filter: invert(71%) sepia(18%) saturate(516%) hue-rotate(242deg) brightness(87%) contrast(84%);
+                }
+            }
+            .email {
+                margin: 14px;
+                text-align: center;
+                img {
+                    font-size: 30px;
+                    filter: invert(71%) sepia(18%) saturate(516%) hue-rotate(242deg) brightness(87%) contrast(84%);
+                }
+            }
+		}
+		.panel-derecho {
+			width: 75%;
+			margin-left: 75px;
+		}
+	}
+    .panel-derecho {
+		.detalles {
+			.temas {
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+		.texto {
+			font-size: 23px;
+			font-weight: 600;
+			color: $color-lila;
+		}
+        .input-box {
+            height: 50px;
+            width: 100%;
+            margin: 12px 0;
+            textarea {
+                height: 120px;
+                width: 300%;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                background: #F0F1F8;
+                border-radius: 6px;
+                padding: 0 15px;
+                resize: none;
+            }
+            input{
+                height: 50px;
+                width: 276%;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                background: #F0F1F8;
+                border-radius: 6px;
+                padding: 0 15px;
+                resize: none;
+            }
+        }
+        .mensaje-box {
+            min-height: 110px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 12px;
+            input[type="button"] {
+                color: $color-blanco;
+                font-size: 18px;
+                outline: none;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 6px;
+                background: #b494bc;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover{
+                    background: $color-blanco;
+                    color: $color-lila;
+                }
+            }
+        }
+	}
+}
+.content-form .panel-izquierdo .detalles .primer-texto,
+.content-form .panel-izquierdo .detalles .primer-texto {
+	font-size: 14px;
+	color: $color-negro;
+}

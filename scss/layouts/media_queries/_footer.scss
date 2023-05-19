@@ -1,0 +1,60 @@
+@media(max-width:1067px){
+    footer{
+        font-size: 13px;
+        .contacto{
+            font-size: 13px;
+            .btn-contact{
+                padding: 5px;
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+@media(max-width:914px){
+    footer{
+        height: 200px;
+        display: grid;
+        grid-template-columns: 210px 210px 210px;
+        grid-template-rows: 80px 80px;
+        align-items: center;
+        justify-items: center;
+        .envios{
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+        .redes{
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+        .contacto{
+            margin-top: 50px;
+            grid-column: 3 / 4;
+        }
+    }
+}
+
+@media(max-width:660px){
+    footer{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        gap: 25px;
+        .copyright{
+            margin-top: 30px;
+        }
+        .pagos{
+            margin-top: 30px;
+        }
+        .envios{
+            margin-top: 30px;
+        }
+        .redes{
+            margin-top: 30px;
+        }
+        .contacto{
+            margin-bottom: 40px;
+        }
+    }
+}

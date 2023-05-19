@@ -1,0 +1,132 @@
+@import "../utilities/variables";
+
+main{
+    .container-banner{
+        @include banner();
+        border: 1px solid $color-gris;
+        .banner{
+            @include banner();
+            background-image: url(../assets/banner/banner-5.jpg);
+            @include bg-image();
+            grid-column: 1 / 13;
+            grid-row: 1 / 3;
+            }
+        }
+        .titulo{
+            margin-top: 10px;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+        }
+        .categorias{
+            margin: 10px 25px;
+            @include grid(12, 5);
+            gap: 10px;
+            .pulseras{
+                grid-row: 1 / 6;
+                grid-column: 1 / 5;
+                @include grid(5, 5);
+                background-image: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../assets/Imagenes/tematicas/producto1.jpg);
+                @include contenido();
+                a{ 
+                    @include contenido-a();
+                    h2{
+                        @include contenido-h2();
+                }
+                }
+                &:hover{
+                    transform: scale(1.03);
+                    transition: transform 1.5s;
+                }
+            }
+            .cadenas{
+                grid-row: 1 / 6;
+                grid-column: 5 / 9;
+                @include grid(5, 5);
+                background-image: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../assets/Imagenes/cadenas/cadenas8.jpg);
+                @include contenido();
+                a{
+                    @include contenido-a();
+                    h2{
+                        @include contenido-h2();
+                    }
+                }
+                &:hover{
+                    transform: scale(1.03);
+                    transition: transform 1.5s;
+                }
+            }
+            .insumos{
+                grid-row: 1 / 6;
+                grid-column: 9 /13;
+                @include grid(5, 5);
+                background-image: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../assets/Imagenes/insumos/perlas-dijes/insumos4.jpg);
+                @include contenido();
+                a{
+                    @include contenido-a();
+                    h2{
+                        @include contenido-h2();
+                    }
+                }
+                &:hover{
+                    transform: scale(1.03);
+                    transition: transform 1.5s;
+                }
+            }
+        }
+        .destacados{
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            h2{
+                font-size: 40px;
+            }
+        }
+        .box-cards{
+            margin-top: 25px;
+            @include d-flex (space-around, wrap, 15px, row);
+        }
+        .informacion-general{
+            margin-top: 25px;
+            @include d-flex (center, wrap, 15px, column);
+            align-items: center;
+            align-self: center;
+            h2{
+                font-size: 50px;
+                background-color: $color-lila;
+                border-radius: 10px;
+            }
+            p{
+                margin-left: 25px;
+                font-size: 17px;
+            }
+        }
+        .informacion-general__2{
+            margin-top: 50px;
+            .box-informacion{
+                @include d-flex (space-evenly, wrap, none, row);
+                .bloque-1{
+                    p{
+                        margin: 0;
+                    }
+                    color: $color-lila;
+                    @include d-flex(center, wrap, 5px, column);
+                    align-items: center;
+                    img{
+                        filter: invert(71%) sepia(18%) saturate(516%) hue-rotate(242deg) brightness(87%) contrast(84%);
+                    }
+                }
+                .bloque-2{
+                    p{
+                        margin: 0;
+                    }
+                    color: $color-lila;
+                    @include d-flex(center, wrap, 5px, column);
+                    align-items: center;
+                    img{
+                        filter: invert(71%) sepia(18%) saturate(516%) hue-rotate(242deg) brightness(87%) contrast(84%);
+                    }
+                }
+            }
+        }
+}
