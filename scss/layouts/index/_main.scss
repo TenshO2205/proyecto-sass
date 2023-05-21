@@ -4,6 +4,7 @@ main{
     .container-banner{
         @include banner();
         border: 1px solid $color-gris;
+        margin-top: 70px;
         .banner{
             @include banner();
             background-image: url(../assets/banner/banner-5.jpg);
@@ -82,9 +83,64 @@ main{
                 font-size: 40px;
             }
         }
-        .box-cards{
-            margin-top: 25px;
-            @include d-flex (space-around, wrap, 15px, row);
+        .destacados-modify{
+            margin-top: 100px
+        }
+        .todos-productos{
+            @include d-flex(center, wrap, 30px, none);
+            align-items: center;
+            .producto{
+                overflow: hidden;
+                background-color: #fafafa;
+                color: $color-negro;
+                text-align: center;
+                width: 240px;
+                height: 400px;
+                padding: 2rem;
+                @include d-flex(center, none, none, column);
+                align-items: center;
+                border-radius: 1.2rem;
+                margin: 2rem;
+                font-size: 18px;
+                img{
+                    height: 200px;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+                .info{
+                    margin-top: 20px;
+                    .titulo-producto{
+                        font-size: 18px;
+                    }
+                    .precio-producto{
+                        margin-top: 10px;
+                        font-size: 18px;
+                    }
+                }
+                a{
+                    margin-top:10px ;
+                    &:link, &:visited{
+                        color: $color-blanco;
+                        display: inline-block;
+                        text-decoration: none;
+                        background-color: $color-lila;
+                        padding: 10px 10px;
+                        border-radius: 1rem;
+                        font-size: 14px;
+                        transition: all .2s;
+                    }
+                    &:hover{
+                        background-color: $color-gris;
+                        color: $color-negro;
+                        transform: scale(1.05);
+                        transition: all .5s;
+                    }
+                }
+                &:hover{
+                    box-shadow: 5px 15px 25px $color-lila;
+                }
+            }
         }
         .informacion-general{
             margin-top: 25px;

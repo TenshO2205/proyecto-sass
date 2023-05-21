@@ -97,10 +97,16 @@
     }
 }
 
-@media(max-width:900px){
-    main{
-        .container-banner{
-            margin-top: 100px;
+@media (max-width:768px){
+    .todos-productos{
+        .producto{
+            box-shadow: 5px 15px 25px $color-lila;
+            img{
+                transform: scale(1);
+            }
+            &:hover{
+                box-shadow: none;
+            }
         }
     }
 }

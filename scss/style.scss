@@ -1,7 +1,7 @@
 @import "./base/reset";
+@import "./base/typo";
 @import "./utilities/variables";
 @import "./utilities/mixins";
-@import "./components/bootstrap";
 @import "./layouts/index/body";
 @import "./layouts/index/header";
 @import "./layouts/index/main";
@@ -10,3 +10,4 @@
 @import "./layouts/media_queries/header";
 @import "./layouts/media_queries/main";
 @import "./layouts/media_queries/footer";
+@import "./layouts/media_queries/contacto";
